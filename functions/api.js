@@ -4,7 +4,7 @@ const app=express();
 const router=express.Router();
 
 router.get('/',(req,res)=>{
-    res.json({"hello1":"h"});
+    res.json({"name":"Abhishek", "Age":23,"Company":"Pinnacle technologies", "task":"Entha Task Chill manpun"});
 })
 
 router.get('/2',(req,res)=>{
