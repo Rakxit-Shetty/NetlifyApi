@@ -2,7 +2,8 @@ const express=require('express');
 const serverless=require('serverless-http');
 const app=express();
 const router=express.Router();
-
+var cors = require('cors');
+ app.use(cors());
 router.get('/',(req,res)=>{
     res.json({"CODE":123});
 })
